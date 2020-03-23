@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freediving</title>
+    <meta name="keyword" content="freediving,Freediver" />
+
+    <link
+      rel="icon"
+      href="https://blueabyss.uk/images/illustrations/free-diver.png"
+    />
+    <link rel="stylesheet" href="SE1001.css" />
+  </head>
+
+  <body>
+    <nav class="logolinks">
+      <div class="Logo">
+        <img
+          src="https://blueabyss.uk/images/illustrations/free-diver.png"
+          alt="freediving"
+        />
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="https://www.deeperblue.com/what-is-freediving/"
+              >Freediving</a
+            >
+          </li>
+          <li>
+            <a href="https://www.padi.com/courses/basic-freediver">Education</a>
+          </li>
+          <li>
+            <a
+              href="https://www.scubadiving.com/best-freediving-photos-locations#page-11"
+              >Locations</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://blog.padi.com/2017/03/25/a-guide-to-freediving-equipment-for-entry-level-freedivers/"
+              >Equipment</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p class="love">
+      IF YOU LOVE TO EXPLORE THE UNDERWATER WORLD WITHOUT ANY EQUIPMENT, THEN
+      FREEDIVING IS FOR YOU!
+    </p>
+
+    <iframe
+      class="video"
+      width="741"
+      height="417"
+      src="https://www.youtube.com/embed/OrRj6mMtZFk"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <div class="img">
+      <img
+        class="pic"
+        src="https://www.aquacityfreediving.com/wp-content/uploads/2018/02/Background_3.jpg"
+        alt="pic1"
+        width="500"
+      />
+      <img
+        class="pic"
+        src="https://www.bahamaslocal.com/files/Vertical%20Blue%20Free%20Diving%20International%20Competition.jpg"
+        alt="pic2"
+        width="500"
+      />
+    </div>
+
+    <div class="gallery">
+      <figure>
+        <img
+          src="italian-freediving-record.jpg"
+          class="galleryimg"
+          alt="Image 1"
+        />
+      </figure>
+      <figure>
+        <img src="tourism01-090819.jpg" class="galleryimg" alt="Image 2" />
+      </figure>
+      <figure>
+        <img
+          src="freediving-christ-of-the-abyss-statue.jpg"
+          class="galleryimg"
+          alt="Image 3"
+        />
+      </figure>
+      <figure>
+        <img
+          src="2ac69a_c21134a478464bc499db1018e1ff94aa_mv2_d_3500_2333_s_2.jpg"
+          class="galleryimg"
+          alt="Image 4"
+        />
+      </figure>
+      <figure>
+        <img
+          src="martin-DaanVerhoeven00504-970x647.jpg"
+          class="galleryimg"
+          alt="Image 5"
+        />
+      </figure>
+      <figure>
+        <img
+          src="a4ccbee8f86654cf29f5b6e457fd57ba.jpg"
+          class="galleryimg"
+          alt="Image 6"
+        />
+      </figure>
+      <figure>
+        <img
+          src="r78-19983988-10155579790584533-8609313126025773551-o.jpg"
+          class="galleryimg"
+          alt="Image 7"
+        />
+      </figure>
+      <figure>
+        <img
+          src="b1ce92f2e2c91b57e45621e029e48043.gif"
+          class="galleryimg"
+          alt="Image 8"
+        />
+      </figure>
+      <figure>
+        <img
+          src="napaling-DSC00945-710bis.jpg"
+          class="galleryimg"
+          alt="Image 9"
+        />
+      </figure>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>
+            Places
+          </th>
+          <th>
+            Equipment
+          </th>
+          <th>
+            Certification
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Blue Hole Dahab Egypt
+          </td>
+          <td>
+            Mask
+          </td>
+          <td>
+            Basic Freediver
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Riviera Maya Cenote
+          </td>
+          <td>
+            Snorkel
+          </td>
+          <td>
+            Intermediate Freediver
+          </td>
+        </tr>
+        <tr>
+          <td>
+            USAT Liberty Shipwreck
+          </td>
+          <td>
+            Fins
+          </td>
+          <td>
+            Advanced Freediver
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong>Join Now</strong>
+
+    <form>
+      <label> Email:</label>
+      <input placeholder="Enter email here" type="email" />
+      <label>First Name:</label>
+      <input autofocus type="text" />
+      <label>Last Name:</label>
+      <input disabled type="text" />
+      <label>Phone Number:</label>
+      <input autofocus type="tel" />
+      <input readonly value="        Almost Done!" type="text" />
+
+      <button onclick="myFunction()">submit</button>
+
+      <script>
+        function myFunction() {
+          alert("Thank you!");
+        }
+      </script>
+    </form>
+
+    <button onclick="getLocation()">Get Location</button>
+    <p id="demo"></p>
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>
